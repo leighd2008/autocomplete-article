@@ -1,13 +1,19 @@
+body {
+  font-family: sans-serif;
+}
+
 input {
   border: 1px solid #999;
-  padding: 8px;
+  padding: 0.5rem;
   width: 300px;
 }
-.no-autocomplete {
+
+.no-suggestions {
   color: #999;
-  padding: 8px;
+  padding: 0.5rem;
 }
-.autocomplete {
+
+.suggestions {
   border: 1px solid #999;
   border-top-width: 0;
   list-style: none;
@@ -17,15 +23,19 @@ input {
   padding-left: 0;
   width: calc(300px + 1rem);
 }
-.autocomplete li {
-  padding: 8px;
+
+.suggestions li {
+  padding: 0.5rem;
 }
-.autocomplete > .active,
-.autocomplete li:hover {
-  background-color: darkgray;
+
+.suggestion-active,
+.suggestions li:hover {
+  background-color: #008f68;
+  color: #fae042;
   cursor: pointer;
   font-weight: 700;
 }
-.autocomplete li:not(:last-of-type) {
+
+.suggestions li:not(:last-of-type) {
   border-bottom: 1px solid #999;
 }
